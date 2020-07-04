@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+  		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Photo Viwer</title>
+  		<link rel="stylesheet" href="assign1.css">
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		
+		<header>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/LEI0440_Leica_IIIf_chrom_-_Sn._580566_1951-52-M39_Blitzsynchron_front_view-6531_hf-.jpg/800px-LEI0440_Leica_IIIf_chrom_-_Sn._580566_1951-52-M39_Blitzsynchron_front_view-6531_hf-.jpg" alt="LOGO.jpg"><div id="tex">PHOTO GALLERY</div>
+		</header>
+		<div class="searchbar">		
+			<input type="text" id="search" placeholder="search photos">
+			<button onclick="SearchPhotos()"><i class="fas fa-search"></i></button>
+		</div>
+		<div id="btnContainer">
+			<button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List </button>
+			<button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid </button>
+		</div>
+		<div id="row">
+			<div id="column"> 
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assign1.js"></script>
+
+		<footer id="footer">
+			Copyright &copy 2020 Naman Saxena		
+		</footer>
+
+	</body>
+</html>
